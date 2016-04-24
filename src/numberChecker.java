@@ -5,15 +5,15 @@ import static java.lang.System.out;
  * Should be used as part of OO3-1RandomNumberGuessingGame
  */
 class numberChecker extends numberGenerator {
-    private int generatedNumber = super.generatedNumber;
-
     private void higherOrLower(int enteredNumber){
-        if (enteredNumber < generatedNumber) out.println("Too low");
-        if (enteredNumber > generatedNumber) out.println("Too high");
+        if (enteredNumber < super.generatedNumber) out.println("Too low");
+        if (enteredNumber > super.generatedNumber) out.println("Too high");
     }
 
+    // boolean method that returns true if the number entered is correct - the entered number is passed as a parameter
     boolean isNumberCorrect(int enteredNumber){
-        if (enteredNumber != generatedNumber) {
+        // evaluate if entered number does not equal generated number
+        if (enteredNumber != super.generatedNumber) {
             higherOrLower(enteredNumber);
             return false;
         } else return true;

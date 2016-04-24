@@ -7,9 +7,13 @@ import java.util.Random;
  */
  class numberGenerator {
     int generatedNumber;
+    Random random;
 
-    void newRandomNumber() {
-        Random random = new Random();
-        this.generatedNumber = random.nextInt(100);
+    numberGenerator() {
+        random = new Random();
+    }
+
+    void generate(){
+        generatedNumber = random.nextInt(100);
     }
 }
