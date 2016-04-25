@@ -27,16 +27,16 @@ public class Main {
         // loop though the following while the user wants to play again
         do {
             // output welcome message
-            out.println("Welcome to the random number guessing game.\n Would you like to see the help screen?");
+            out.println("Welcome to the random number guessing game.\nWould you like to see the help screen?");
             // create scanner object to read input
             Scanner s = new Scanner(in);
             // catch input and store it in a string called answer
             String answer = s.nextLine();
             // evaluate if the user entered "y" or "Y", if so output help message
-            if(answer.equals("y") || answer.equals("Y")) out.println("This is a random number guessing game.\n" +
-                    "When you start the game a number is generated at random,\n" +
-                    "You then have an unlimited number of opportunities to guess \n" +
-                    "this number. If you guess wrong you will be told if you guessed \n" +
+            if(answer.equals("y") || answer.equals("Y")) out.println("This is a random number guessing game. \n" +
+                    "When you start the game a number is generated at random, " +
+                    "You then have an unlimited number of opportunities to guess " +
+                    "this number. If you guess wrong you will be told if you guessed " +
                     "too low or too high.");
             // generate a new random number
             checker.generate();

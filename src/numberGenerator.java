@@ -1,19 +1,20 @@
 import java.util.Random;
 
-/**
- * Created by ross on 3/30/16.
- * Should be used as part of OO3-1RandomNumberGuessingGame
- *
- */
- class numberGenerator {
+// this is the class that generates the random number
+class numberGenerator {
+    // integer to store number
     int generatedNumber;
-    Random random;
+    // create private variable to store Random object
+    private Random random;
 
+    // initialise object with constructor
     numberGenerator() {
         random = new Random();
     }
 
+    // generate new random number when method is called
     void generate(){
+        // store random number in integer variable - number is capped at 100
         generatedNumber = random.nextInt(100);
     }
 }
