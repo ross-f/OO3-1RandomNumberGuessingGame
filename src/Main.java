@@ -34,9 +34,9 @@ public class Main {
             String answer = s.nextLine();
             // evaluate if the user entered "y" or "Y", if so output help message
             if(answer.equals("y") || answer.equals("Y")) out.println("This is a random number guessing game. \n" +
-                    "When you start the game a number is generated at random, " +
+                    "When you start the game a number is generated at random, \n" +
                     "You then have an unlimited number of opportunities to guess " +
-                    "this number. If you guess wrong you will be told if you guessed " +
+                    "this number. \nIf you guess wrong you will be told if you guessed " +
                     "too low or too high.");
             // generate a new random number
             checker.generate();
